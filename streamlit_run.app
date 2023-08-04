@@ -9,8 +9,6 @@ from streamlit_extras.add_vertical_space import add_vertical_space
 from langchain.llms import AzureOpenAI
 import os 
 
-key1 = "48cba1f4eb1a4062ac14f0fea9442eaa"
-key2 = "7021ecd95acf45d18ccd82149d3d9e8a"
 
 os.environ["OPENAI_API_TYPE"] = "azure"
 os.environ["OPENAI_API_VERSION"] = "2023-03-15-preview"
