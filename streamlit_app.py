@@ -9,7 +9,12 @@ from streamlit_extras.add_vertical_space import add_vertical_space
 from langchain.llms import AzureOpenAI
 import os 
 
+key1 = st.secrets["key1"]
 
+os.environ["OPENAI_API_TYPE"] = "azure"
+os.environ["OPENAI_API_VERSION"] = "2023-03-15-preview"
+os.environ["OPENAI_API_BASE"] = "https://azureopenai-mutiagent.openai.azure.com/"
+os.environ["OPENAI_API_KEY"] = key1
 
 
 llm = AzureChatOpenAI(
