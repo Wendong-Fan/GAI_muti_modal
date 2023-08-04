@@ -10,11 +10,6 @@ from langchain.llms import AzureOpenAI
 import os 
 
 
-key1 = '326dc172a0844accbb26d2600a471fba'
-os.environ["OPENAI_API_TYPE"] = "azure"
-os.environ["OPENAI_API_VERSION"] = "2023-03-15-preview"
-os.environ["OPENAI_API_BASE"] = "https://azureopenai-mutiagent.openai.azure.com/"
-os.environ["OPENAI_API_KEY"] = key1
 
 
 llm = AzureChatOpenAI(
